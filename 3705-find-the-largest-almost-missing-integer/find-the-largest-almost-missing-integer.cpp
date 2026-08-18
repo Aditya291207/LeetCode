@@ -2,7 +2,7 @@ class Solution {
 public:
     int largestInteger(vector<int>& nums, int k) {
         int n=nums.size();
-        int freq[51]={0};
+        int freq[100]={0};
         for(int& i : nums){
             ++freq[i];
         }
