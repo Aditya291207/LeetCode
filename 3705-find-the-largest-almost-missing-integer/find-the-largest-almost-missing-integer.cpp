@@ -3,7 +3,7 @@ public:
     int largestInteger(vector<int>& nums, int k) {
         int n=nums.size();
         int freq[100]={0};
-        for(int& i : nums){
+        for(int i : nums){
             ++freq[i];
         }
         int ans=-1;
