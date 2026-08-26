@@ -10,7 +10,7 @@ void getallsubsets(vector<int>& nums,vector<int>& ans,int i,vector<vector<int>>&
     getallsubsets(nums, ans, i + 1,allsubsets);
 
     ans.pop_back();
-    int ind=i+1;//ind=index
+    int ind=i+1;
     while(ind<nums.size() && nums[ind]==nums[ind-1]){
         ind++;
     }
