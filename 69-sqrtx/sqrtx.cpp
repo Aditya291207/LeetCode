@@ -1,10 +1,20 @@
 class Solution {
 public:
     int mySqrt(int x) {
-        int i=0;
-        while((long long)i*i<=x){
-            i++;
+        long long low = 1;
+        long long high = x;
+
+        while (low <= high) {
+            long long mid = low + (high - low) / 2;
+
+            if (mid * mid <= x) {
+                low = mid + 1;
+            } 
+            else {
+                high = mid - 1;
+            }
         }
-        return i-1;
+
+        return high;
     }
 };
