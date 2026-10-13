@@ -5,7 +5,6 @@ public:
         sort(nums.begin(),nums.end());
             int a =  nums[n-1]*nums[n-2]*nums[n-3];
             int b = nums[n-1] *nums[1]*nums[0]; 
-
         return max(a,b);
     }
 };
